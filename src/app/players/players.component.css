@@ -4,3 +4,8 @@
     justify-content: space-around;
     min-height: 350px;
 }
+
+.playerName {
+    position: relative;
+    bottom: 4px;
+}

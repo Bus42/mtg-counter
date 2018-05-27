@@ -17,8 +17,11 @@ export class CounterComponent implements OnInit {
   }
 
   getStyle(){
-    if (this.life >= 14) {
+    if (this.life > 20) {
       return 'btn btn-primary'
+    }
+    if (this.life >= 14 && this.life <= 20) {
+      return 'btn btn-default'
     };
     if (this.life >= 7 && this.life < 14) {
       return 'btn btn-warning'
