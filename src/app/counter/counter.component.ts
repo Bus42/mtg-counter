@@ -12,6 +12,7 @@ export class CounterComponent implements OnInit {
     return this.life = this.life + 1;
   }
   dec(){
+    if (this.life < 1){return 0};
     return this.life = this.life - 1;
   }
 
