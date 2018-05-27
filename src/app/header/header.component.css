@@ -2,8 +2,23 @@
     height: 125px;
 }
 
-.fa-cogs {
+.fa-cogs, .fa-undo {
     position: fixed;
     top: 12px;
+}
+
+.fa {
+    transition: all .2s ease-in-out;
+}
+
+.fa:hover{
+    transform: scale(1.1);
+}
+
+.fa-cogs {
     left: 8px;
+}
+
+.fa-undo {
+    right: 8px;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CounterComponent } from '../counter/counter.component'
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  showMenu(){
+    let menuEl = document.getElementById('menuWrapper');
+    menuEl.classList.remove("menuInactive");
+    menuEl.classList.add("menuActive");
+  }
+
+  reset(){
+    console.log(CounterComponent)
+  }
 
   constructor() { }
 
