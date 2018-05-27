@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { PLAYERS } from '../PLAYERS';
+import { CounterComponent } from '../counter/counter.component'
 
 @Component({
   selector: 'app-players',
