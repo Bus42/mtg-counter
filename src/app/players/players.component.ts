@@ -10,7 +10,7 @@ import { CounterComponent } from '../counter/counter.component'
 })
 export class PlayersComponent implements OnInit {
 
-  players = PLAYERS;
+  players = PLAYERS.slice(0,2);
 
   constructor() { }
 
