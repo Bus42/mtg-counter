@@ -9,4 +9,9 @@
 
 .fa:hover{
     transform: scale(1.1);
+    cursor: pointer;
+}
+
+.fa-undo {
+    margin: 0 5px;
 }

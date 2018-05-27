@@ -13,11 +13,7 @@ export class HeaderComponent implements OnInit {
     menuEl.classList.remove("menuInactive");
     menuEl.classList.add("menuActive");
   }
-
-  reset(){
-    console.log(CounterComponent)
-  }
-
+  
   constructor() { }
 
   ngOnInit() {

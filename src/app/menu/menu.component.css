@@ -32,9 +32,8 @@ li, #closeMenu {
 
 li:hover, #closeMenu:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
-
-
 
 .menuInactive {
     left: -250px;

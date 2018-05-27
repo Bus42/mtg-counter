@@ -1,8 +1,7 @@
 <div id="menuWrapper" class="menuInactive">
   <ul class="list-unstyled">
-    <li>Players</li>
-    <li>Background</li>
-    <li>Font</li>
+    <li class="menuItem" (click)="changeBg()" >Background</li>
+    <li class="menuItem" (click)="changeFont()" >Font</li>
   </ul>
   <i id="closeMenu" (click)="hideMenu()" class="fa fa-times"></i>
 </div>

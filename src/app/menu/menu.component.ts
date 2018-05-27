@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  changeBg(){
+    console.log('switchBg() called');
+  }
+
+  changeFont(){
+    console.log('changeFont() called');
+  }
+
   hideMenu(){
     let menuEl = document.getElementById('menuWrapper');
     menuEl.classList.remove('menuActive');

@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Almendra+SC|Black+And+White+Picture|Caesar+Dressing|Cormorant+Unicase|Della+Respira|Jolly+Lodger|Julius+Sans+One|Nova+Oval|Vollkorn+SC');
 body {
     background-image: url("./assets/medieval-fantasy-castle-2.jpg");
     font-size: 2em;
+    /*font-family: 'Caesar Dressing', cursive;*/
+    /*font-family: 'Nova Oval', cursive;*/
+    /*font-family: 'Jolly Lodger', cursive;*/
+    /*font-family: 'Vollkorn SC', serif;*/
+    /*font-family: 'Della Respira', serif;*/
+    /*font-family: 'Almendra SC', serif;*/
+    /*font-family: 'Cormorant Unicase', serif;*/
+    /*font-family: 'Julius Sans One', sans-serif;*/
+    /*font-family: 'Black And White Picture', sans-serif;*/
+    font-family: 'Aclonica', sans-serif;
 }

@@ -31,6 +31,11 @@ export class CounterComponent implements OnInit {
     }
   }
 
+  resetCounter(){
+    this.life = 20;
+    return this.life;
+  }
+
   constructor() { }
 
   ngOnInit() {
