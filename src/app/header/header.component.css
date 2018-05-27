@@ -1,3 +1,9 @@
+.headerDiv {
+    height: 125px;
+}
+
 .fa-cogs {
-    margin: 12px 8px;
+    position: fixed;
+    top: 12px;
+    left: 8px;
 }
