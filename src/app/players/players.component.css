@@ -1,0 +1,6 @@
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    min-height: 350px;
+}

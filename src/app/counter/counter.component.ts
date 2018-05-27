@@ -16,6 +16,18 @@ export class CounterComponent implements OnInit {
     return this.life = this.life - 1;
   }
 
+  getStyle(){
+    if (this.life >= 14) {
+      return 'btn btn-primary'
+    };
+    if (this.life >= 7 && this.life < 14) {
+      return 'btn btn-warning'
+    }
+    if (this.life < 7) {
+      return 'btn btn-danger'
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -1,8 +1,10 @@
-<ul class="players">
-  <li *ngFor="let player of players">
+<div class="text-center">
+  <ul class="flex-container players list-unstyled">
+    <li *ngFor="let player of players">
       <label for="playerOne">
-          <input [(ngModel)]="player.name" placeholder="Player One" >
-        </label>
-        <app-counter></app-counter>
-  </li>
-</ul>
+        <input class="form-control" [(ngModel)]="player.name" placeholder="Player One">
+      </label>
+      <app-counter></app-counter>
+    </li>
+  </ul>
+</div>

@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("./assets/medieval-fantasy-castle-2.jpg");
+    font-size: 2em;
+}
