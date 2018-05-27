@@ -1,0 +1,7 @@
+<ul class="players">
+  <li *ngFor="let player of players">
+      <label for="playerOne">
+          <input [(ngModel)]="player.name" placeholder="Player One" >
+        </label>
+  </li>
+</ul>
