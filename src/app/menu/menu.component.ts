@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  hideMenu(){
+  hideMenu() {
     let menuEl = document.getElementById('menuWrapper');
-    menuEl.classList.remove('menuActive');
-    menuEl.classList.add('menuInactive');
+    let bgList = document.getElementById('bgList');
+    menuEl.classList.replace('menuActive', 'menuInactive');
+    if (bgList.classList.contains('bgMenu-active')) {
+      bgList.classList.replace('bgMenu-active', 'bgMenu-inactive');
+    }
   }
 
-  showBgList(){
+  showBgList() {
     let bgList = document.getElementById('bgList');
     bgList.classList.replace('bgMenu-inactive', 'bgMenu-active');
   }
@@ -23,11 +26,11 @@ export class MenuComponent implements OnInit {
     bgList.classList.replace('bgMenu-active', 'bgMenu-inactive');
   }
 
-  changeBg(bg){
+  changeBg(bg) {
     document.body.style.background = `url(../assets/${bg})`;
   }
 
-    constructor() { }
+  constructor() { }
 
   ngOnInit() {
   }
