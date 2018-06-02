@@ -3,8 +3,8 @@
     flex-flow: column;
     justify-content: space-evenly;
     position: fixed;
-    height: 60vh;
-    top: 100px;
+    top: 60px;
+    height: 90vh;
     width: 100vw;
     z-index: 0;
 }
@@ -36,8 +36,16 @@
         width: 90vw;
         margin: 0 5vw;
     }
+}
 
+@media screen and (max-height: 700px) {
     .flex-container {
         justify-content: center;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .flex-container {
+        justify-content: flex-start;
     }
 }
