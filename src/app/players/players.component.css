@@ -3,9 +3,10 @@
     flex-flow: column;
     justify-content: space-evenly;
     position: fixed;
-    height: 100vh;
-    top: 0px;
+    height: 60vh;
+    top: 100px;
     width: 100vw;
+    z-index: 0;
 }
 
 .playerName {
