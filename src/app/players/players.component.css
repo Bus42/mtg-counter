@@ -1,11 +1,42 @@
 .flex-container {
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
-    min-height: 350px;
+    justify-content: space-evenly;
+    position: fixed;
+    height: 100vh;
+    top: 0px;
+    width: 100vw;
 }
 
 .playerName {
     position: relative;
     bottom: 4px;
+}
+
+.li-wrapper {
+    padding: 12px 10px 6px 12px;
+    background-color: black;
+    opacity: .7;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.list-item {
+    margin: 4px;
+    flex-shrink: 1;
+}
+
+@media screen and (max-width: 450px) {
+    #player-name-input-label {
+        display: block;
+    }
+    
+    .li-wrapper {
+        width: 90vw;
+        margin: 0 5vw;
+    }
+
+    .flex-container {
+        justify-content: center;
+    }
 }

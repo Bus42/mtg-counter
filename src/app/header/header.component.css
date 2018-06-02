@@ -1,5 +1,6 @@
 .headerDiv {
     height: 125px;
+    z-index: 1;
 }
 
 .fa-cogs, .fa-undo {
