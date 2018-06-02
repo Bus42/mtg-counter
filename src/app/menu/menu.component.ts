@@ -23,6 +23,10 @@ export class MenuComponent implements OnInit {
     bgList.classList.replace('bgMenu-active', 'bgMenu-inactive');
   }
 
+  changeBg(bg){
+    document.body.style.background = `url(../assets/${bg})`;
+  }
+
     constructor() { }
 
   ngOnInit() {

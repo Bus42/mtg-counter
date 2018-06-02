@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Aclonica|Almendra+SC|Black+And+White+Picture|Caesar+Dressing|Cormorant+Unicase|Della+Respira|Jolly+Lodger|Julius+Sans+One|Nova+Oval|Vollkorn+SC');
 body {
     background-image: url("./assets/battle.jpg");
+    background-color: black;
     font-size: 2em;
     color: #007bff;
     /*font-family: 'Caesar Dressing', cursive;*/

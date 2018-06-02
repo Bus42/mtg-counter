@@ -3,15 +3,15 @@
     <li class="menuItem">
       <h3 (click)="showBgList()" >Background</h3>
       <ul id="bgList" class="list-unstyled bgMenu-inactive" >
-        <li>Battle</li>
-        <li>Beach</li>
-        <li>Castle</li>
-        <li>Fantasy</li>
-        <li>Forest</li>
-        <li>Lava</li>
-        <li>Mist</li>
-        <li>Space</li>
-        <li>Swamp</li>
+        <li (click)="changeBg('battle.jpg')" >Battle</li>
+        <li (click)="changeBg('beach.jpg')" >Beach</li>
+        <li (click)="changeBg('castle.jpg')" >Castle</li>
+        <li (click)="changeBg('dd.png')" >Fantasy</li>
+        <li (click)="changeBg('forest.jpg')" >Forest</li>
+        <li (click)="changeBg('lava.jpg')" >Lava</li>
+        <li (click)="changeBg('mist.jpg')" >Mist</li>
+        <li (click)="changeBg('space.jpg')" >Space</li>
+        <li (click)="changeBg('swamp.jpg')" >Swamp</li>
         <li (click)="hideBgList()" ><small class="text-info" >Close</small></li>
       </ul>
     </li>
