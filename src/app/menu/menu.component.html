@@ -1,7 +1,22 @@
 <div id="menuWrapper" class="menuInactive">
-  <ul class="list-unstyled">
-    <li class="menuItem" (click)="changeBg()" >Background</li>
-    <li class="menuItem" (click)="changeFont()" >Font</li>
+  <ul id="outer-list" class="list-unstyled">
+    <li class="menuItem">
+      <h3 (click)="showBgList()" >Background</h3>
+      <ul id="bgList" class="list-unstyled bgMenu-inactive" >
+        <li>Battle</li>
+        <li>Beach</li>
+        <li>Castle</li>
+        <li>Fantasy</li>
+        <li>Forest</li>
+        <li>Lava</li>
+        <li>Mist</li>
+        <li>Space</li>
+        <li>Swamp</li>
+        <li (click)="hideBgList()" ><small class="text-info" >Close</small></li>
+      </ul>
+    </li>
+
+    <li class="menuItem" ><h3>Font</h3></li>
   </ul>
   <i id="closeMenu" (click)="hideMenu()" class="fa fa-times"></i>
 </div>

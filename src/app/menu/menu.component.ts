@@ -7,18 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  changeBg(){
-    console.log('switchBg() called');
-  }
-
-  changeFont(){
-    console.log('changeFont() called');
-  }
-
   hideMenu(){
     let menuEl = document.getElementById('menuWrapper');
     menuEl.classList.remove('menuActive');
     menuEl.classList.add('menuInactive');
+  }
+
+  showBgList(){
+    let bgList = document.getElementById('bgList');
+    bgList.classList.replace('bgMenu-inactive', 'bgMenu-active');
+  }
+
+  hideBgList() {
+    let bgList = document.getElementById('bgList');
+    bgList.classList.replace('bgMenu-active', 'bgMenu-inactive');
   }
 
     constructor() { }
