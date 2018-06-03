@@ -4,3 +4,4 @@ Option to change font size
 Change number of players
 Track number of games
 Link to MTG rules
+Dice roller
