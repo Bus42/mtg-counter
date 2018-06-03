@@ -1,5 +1,21 @@
 <div id="menuWrapper" class="menuInactive">
   <ul id="outer-list" class="list-unstyled">
+
+    <li class="menuItem">
+      <h3 (click)="showChoosePlayers()" >Player Count</h3>
+      <ul class="list-inline choosePlayers-inactive" id="choosePlayers" >
+        <li>
+          <i class="fas fa-dice-two" (click)="playerCount(2)" ></i>
+        </li>
+        <li>
+          <i class="fas fa-dice-three" (click)="playerCount(3)" ></i>
+        </li>
+        <li>
+          <i class="fas fa-dice-four" (click)="playerCount(4)" ></i>
+        </li>
+      </ul>
+    </li>
+
     <li class="menuItem">
       <h3 (click)="showBgList()">Background</h3>
       <ul id="bgList" class="list-unstyled bgMenu-inactive">
@@ -32,13 +48,17 @@
     </li>
 
     <li class="menuItem">
-      <h3 (click)="showRules()" >Rules</h3>
+      <h3 (click)="showRules()">Rules</h3>
       <ul id="rules" class="list-unstyled rules-inactive">
-        <li><a href="../../assets/EN_M15_QckStrtBklt_LR_Crop.pdf" target="qsWindow">Quickstart Guide</a></li>
-        <li><a href="../../assets/MagicCompRules 20180413.pdf" target="compWindow">Comprehensive Rules</a></li>
+        <li>
+          <a href="../../assets/EN_M15_QckStrtBklt_LR_Crop.pdf" target="qsWindow">Quickstart Guide</a>
+        </li>
+        <li>
+          <a href="../../assets/MagicCompRules 20180413.pdf" target="compWindow">Comprehensive Rules</a>
+        </li>
       </ul>
     </li>
 
   </ul>
-  <li id="closeMenu" (click)="hideMenu()" class="fa fa-times"></li>
+  <i id="closeMenu" (click)="hideMenu()" class="fa fa-times"></i>
 </div>

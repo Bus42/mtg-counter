@@ -49,3 +49,11 @@
         justify-content: flex-start;
     }
 }
+
+.shown {
+    display: inline-block;
+}
+
+.not-shown {
+    display: none;
+}

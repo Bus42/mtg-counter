@@ -17,11 +17,13 @@
     right: 12px;
 }
 
-li, #closeMenu {
+li,
+#closeMenu {
     transition: all .2s ease-in-out;
 }
 
-li:hover, #closeMenu:hover {
+li:hover,
+#closeMenu:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -55,7 +57,7 @@ li:hover, #closeMenu:hover {
 }
 
 .bgMenu-active {
-    height: 300px;
+    height: 250px;
 }
 
 .fontList-active {
@@ -87,4 +89,37 @@ li:hover, #closeMenu:hover {
 
 .rules-inactive {
     height: 0;
+}
+
+
+#bgList,
+#fontList,
+#rules>li>a,
+#choosePlayers>li {
+    text-decoration: none;
+    color: green;
+}
+
+#choosePlayers {
+    overflow: hidden;
+    padding: 0 0 0 12px;
+    transition: all .2s ease-in-out;
+}
+
+.choosePlayers-active {
+    height: 60px;
+}
+
+.choosePlayers-inactive {
+    height: 0;
+}
+
+#choosePlayers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#choosePlayers > li {
+    display: inline;
+    font-size: 1.5em;
 }
