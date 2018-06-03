@@ -30,6 +30,15 @@
         <li (click)="changeFont('Aclonica')">Aclonica</li>
       </ul>
     </li>
+
+    <li class="menuItem">
+      <h3 (click)="showRules()" >Rules</h3>
+      <ul id="rules" class="list-unstyled rules-inactive">
+        <li><a href="../../assets/EN_M15_QckStrtBklt_LR_Crop.pdf" target="qsWindow">Quickstart Guide</a></li>
+        <li><a href="../../assets/MagicCompRules 20180413.pdf" target="compWindow">Comprehensive Rules</a></li>
+      </ul>
+    </li>
+
   </ul>
   <li id="closeMenu" (click)="hideMenu()" class="fa fa-times"></li>
 </div>

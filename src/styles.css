@@ -2,18 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Aclonica|Almendra+SC|Black+And+White+Picture|Caesar+Dressing|Cormorant+Unicase|Della+Respira|Jolly+Lodger|Julius+Sans+One|Nova+Oval|Vollkorn+SC');
 body {
-    background-image: url("./assets/battle.jpg");
+    background-image: url("./assets/mist.jpg");
     background-color: black;
     font-size: 2em;
     color: #007bff;
-    /*font-family: 'Caesar Dressing', cursive;*/
-    /*font-family: 'Nova Oval', cursive;*/
-    /*font-family: 'Jolly Lodger', cursive;*/
-    /*font-family: 'Vollkorn SC', serif;*/
-    /*font-family: 'Della Respira', serif;*/
-    /*font-family: 'Almendra SC', serif;*/
-    /*font-family: 'Cormorant Unicase', serif;*/
-    /*font-family: 'Julius Sans One', sans-serif;*/
-    /*font-family: 'Black And White Picture', sans-serif;*/
-    font-family: 'Aclonica', sans-serif;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-family: 'Vollkorn SC', serif;
 }

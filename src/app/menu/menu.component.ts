@@ -21,6 +21,12 @@ export class MenuComponent implements OnInit {
     if (fontList.classList.contains('fontList-active')) {
       this.hideFontList();
     }
+
+    let rulesEl = document.getElementById('rules');
+    if (rulesEl.classList.contains('rules-active')){
+      this.hideRules();
+    }
+
   }
 
   showBgList() {
@@ -31,6 +37,11 @@ export class MenuComponent implements OnInit {
     let fontList = document.getElementById('fontList');
     if (fontList.classList.contains('fontList-active')) {
       this.hideFontList();
+    }
+
+    let rulesEl = document.getElementById('rules');
+    if (rulesEl.classList.contains('rules-active')){
+      this.hideRules();
     }
   }
 
@@ -59,10 +70,37 @@ export class MenuComponent implements OnInit {
     if (bgList.classList.contains('bgMenu-active')) {
       this.hideBgList();
     }
+
+    let rulesEl = document.getElementById('rules');
+    if (rulesEl.classList.contains('rules-active')){
+      this.hideRules();
+    }
   }
 
   changeFont(font) {
     document.body.style.fontFamily = `${font}, cursive`;
+  }
+
+  showRules(){
+    let rulesEl = document.getElementById('rules');
+    rulesEl.classList.remove('rules-inactive');
+    rulesEl.classList.add('rules-active');
+
+    let bgList = document.getElementById('bgList');
+    if (bgList.classList.contains('bgMenu-active')) {
+      this.hideBgList();
+    }
+
+    let fontList = document.getElementById('fontList');
+    if (fontList.classList.contains('fontList-active')) {
+      this.hideFontList();
+    }
+  }
+
+  hideRules(){
+    let rulesEl = document.getElementById('rules');
+    rulesEl.classList.remove('rules-active');
+    rulesEl.classList.add('rules-inactive');
   }
 
   constructor() { }
