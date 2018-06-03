@@ -47,10 +47,29 @@ li:hover, #closeMenu:hover {
     transition: all .2s ease-in-out;
 }
 
+#fontList {
+    overflow: hidden;
+    padding: 0 0 0 12px;
+    font-size: .70em;
+    transition: all .2s ease-in-out;
+}
+
 .bgMenu-active {
+    height: 300px;
+}
+
+.fontList-active {
     height: 300px;
 }
 
 .bgMenu-inactive {
     height: 0px;
+}
+
+.fontList-inactive {
+    height: 0px;
+}
+
+.menuItem {
+    margin-top: 12px;
 }

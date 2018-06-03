@@ -1,39 +1,35 @@
 <div id="menuWrapper" class="menuInactive">
   <ul id="outer-list" class="list-unstyled">
     <li class="menuItem">
-      <h3 (click)="showBgList()" >Background</h3>
-      <ul id="bgList" class="list-unstyled bgMenu-inactive" >
-        <li (click)="changeBg('battle.jpg')" >Battle</li>
-        <li (click)="changeBg('beach.jpg')" >Beach</li>
-        <li (click)="changeBg('castle.jpg')" >Castle</li>
-        <li (click)="changeBg('dd.png')" >Fantasy</li>
-        <li (click)="changeBg('forest.jpg')" >Forest</li>
-        <li (click)="changeBg('lava.jpg')" >Lava</li>
-        <li (click)="changeBg('mist.jpg')" >Mist</li>
-        <li (click)="changeBg('space.jpg')" >Space</li>
-        <li (click)="changeBg('swamp.jpg')" >Swamp</li>
-        <li (click)="hideBgList()" ><small class="text-info" >Close</small></li>
+      <h3 (click)="showBgList()">Background</h3>
+      <ul id="bgList" class="list-unstyled bgMenu-inactive">
+        <li (click)="changeBg('battle.jpg')">Battle</li>
+        <li (click)="changeBg('beach.jpg')">Beach</li>
+        <li (click)="changeBg('castle.jpg')">Castle</li>
+        <li (click)="changeBg('dd.png')">Fantasy</li>
+        <li (click)="changeBg('forest.jpg')">Forest</li>
+        <li (click)="changeBg('lava.jpg')">Lava</li>
+        <li (click)="changeBg('mist.jpg')">Mist</li>
+        <li (click)="changeBg('space.jpg')">Space</li>
+        <li (click)="changeBg('swamp.jpg')">Swamp</li>
       </ul>
     </li>
 
-    <li class="menuItem" >
-      <h3>Font</h3>
-      <!--
-        <ul id="fontList" class="list-unstyled fontMenu-inactive" >
-        <li (click)="changeFont('Caesar Dressing')" >Caesar Dressing</li>
-        <li (click)="changeFont('Nova Oval')" >Nova Oval</li>
-        <li (click)="changeFont('Jolly Lodger')" >Jolly Lodger</li>
-        <li (click)="changeFont('Vollkorn SC')" >Vollkorn SC</li>
-        <li (click)="changeFont('Della Respira')" >Della Respira</li>
-        <li (click)="changeFont('Almendra SC')" >Almendra SC</li>
-        <li (click)="changeFont('Cormorant Unicase')" >Cormorant Unicase</li>
-        <li (click)="changeFont('Julius Sans One')" >Julius Sans One</li>
-        <li (click)="changeFont('Black And White Picture')" >Black And White Picture</li>
-        <li (click)="changeFont('Aclonica')" >Aclonica</li>
-        <li (click)="hideFontList()" ><small>Close</small></li>
+    <li class="menuItem">
+      <h3 (click)="showFontList()">Font</h3>
+      <ul id="fontList" class="list-unstyled fontList-inactive">
+        <li (click)="changeFont('Caesar Dressing')">Caesar Dressing</li>
+        <li (click)="changeFont('Nova Oval')">Nova Oval</li>
+        <li (click)="changeFont('Jolly Lodger')">Jolly Lodger</li>
+        <li (click)="changeFont('Vollkorn SC')">Vollkorn SC</li>
+        <li (click)="changeFont('Della Respira')">Della Respira</li>
+        <li (click)="changeFont('Almendra SC')">Almendra SC</li>
+        <li (click)="changeFont('Cormorant Unicase')">Cormorant Unicase</li>
+        <li (click)="changeFont('Julius Sans One')">Julius Sans One</li>
+        <li (click)="changeFont('Black And White Picture')">Black And White Picture</li>
+        <li (click)="changeFont('Aclonica')">Aclonica</li>
       </ul>
-      -->
     </li>
   </ul>
-  <i id="closeMenu" (click)="hideMenu()" class="fa fa-times"></i>
+  <li id="closeMenu" (click)="hideMenu()" class="fa fa-times"></li>
 </div>
