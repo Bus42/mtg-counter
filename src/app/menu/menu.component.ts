@@ -9,20 +9,29 @@ export class MenuComponent implements OnInit {
 
   hideMenu() {
     let menuEl = document.getElementById('menuWrapper');
-    let bgList = document.getElementById('bgList');
-    let fontList = document.getElementById('fontList');
     menuEl.classList.remove('menuActive');
     menuEl.classList.add('menuInactive');
+
+    let bgList = document.getElementById('bgList');
     if (bgList.classList.contains('bgMenu-active')) {
-      bgList.classList.remove('bgMenu-active');
-      bgList.classList.add('bgMenu-inactive');
+      this.hideBgList();
+    }
+
+    let fontList = document.getElementById('fontList');
+    if (fontList.classList.contains('fontList-active')) {
+      this.hideFontList();
     }
   }
 
   showBgList() {
     let bgList = document.getElementById('bgList');
-    bgList.classList.remove('bgmenu-inactive');
+    bgList.classList.remove('bgMenu-inactive');
     bgList.classList.add('bgMenu-active');
+
+    let fontList = document.getElementById('fontList');
+    if (fontList.classList.contains('fontList-active')) {
+      this.hideFontList();
+    }
   }
 
   hideBgList() {
@@ -35,22 +44,26 @@ export class MenuComponent implements OnInit {
     document.body.style.background = `url(../assets/${bg})`;
   }
 
-  showFontList() {
+  hideFontList() {
     let fontList = document.getElementById('fontList');
-    fontList.classList.remove('fontMenu-inactive');
-    fontList.classList.add('fontMenu-active');
+    fontList.classList.remove('fontList-active');
+    fontList.classList.add('fontList-inactive');
   }
 
-  hideFontList(){
-    let fontlist = document.getElementById('fontList');
-    fontlist.classList.remove('fontMenu-active');
-    fontlist.classList.add('fontMenu-inactive');
+  showFontList() {
+    let fontList = document.getElementById('fontList');
+    fontList.classList.remove('fontList-inactive');
+    fontList.classList.add('fontList-active');
+
+    let bgList = document.getElementById('bgList');
+    if (bgList.classList.contains('bgMenu-active')) {
+      this.hideBgList();
+    }
   }
 
   changeFont(font) {
     document.body.style.fontFamily = `${font}, cursive`;
   }
-
 
   constructor() { }
 
