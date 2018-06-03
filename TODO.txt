@@ -1,0 +1,5 @@
+FEATURES
+
+Option to change font size
+Track number of games
+Dice roller

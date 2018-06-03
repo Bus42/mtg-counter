@@ -7,6 +7,7 @@ import { PlayersComponent } from './players/players.component';
 import { CounterComponent } from './counter/counter.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { DiceComponent } from './dice/dice.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuComponent } from './menu/menu.component';
     PlayersComponent,
     CounterComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    DiceComponent
   ],
   imports: [
     BrowserModule,
