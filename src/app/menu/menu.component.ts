@@ -10,20 +10,24 @@ export class MenuComponent implements OnInit {
   hideMenu() {
     let menuEl = document.getElementById('menuWrapper');
     let bgList = document.getElementById('bgList');
-    menuEl.classList.replace('menuActive', 'menuInactive');
+    menuEl.classList.remove('menuActive');
+    menuEl.classList.add('menuInactive');
     if (bgList.classList.contains('bgMenu-active')) {
-      bgList.classList.replace('bgMenu-active', 'bgMenu-inactive');
+      bgList.classList.remove('bgMenu-active');
+      bgList.classList.add('bgMenu-inactive');
     }
   }
 
   showBgList() {
     let bgList = document.getElementById('bgList');
-    bgList.classList.replace('bgMenu-inactive', 'bgMenu-active');
+    bgList.classList.remove('bgmenu-inactive');
+    bgList.classList.add('bgMenu-active');
   }
 
   hideBgList() {
     let bgList = document.getElementById('bgList');
-    bgList.classList.replace('bgMenu-active', 'bgMenu-inactive');
+    bgList.classList.remove('bgMenu-active');
+      bgList.classList.add('bgMenu-inactive');
   }
 
   changeBg(bg) {

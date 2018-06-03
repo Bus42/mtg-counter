@@ -10,7 +10,8 @@ export class HeaderComponent implements OnInit {
 
   showMenu(){
     let menuEl = document.getElementById('menuWrapper');
-    menuEl.classList.replace('menuInactive', 'menuActive');
+    menuEl.classList.remove('menuInactive');
+    menuEl.classList.add('menuActive');
   }
   
   constructor() { }
