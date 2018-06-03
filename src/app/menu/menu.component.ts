@@ -27,6 +27,11 @@ export class MenuComponent implements OnInit {
       this.hideRules();
     }
 
+    let choosePlayers = document.getElementById('choosePlayers');
+        if (choosePlayers.classList.contains('choosePlayers-active')){
+      this.hideChoosePlayers();
+    }
+
   }
 
   showBgList() {
