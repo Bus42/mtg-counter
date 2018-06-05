@@ -169,7 +169,7 @@ export class MenuComponent implements OnInit {
   changeColor(){
     let colorPicker = document.getElementById('colorPicker');
     let newColor = colorPicker.style.color;
-    console.log(newColor);
+    console.log(`changeColor() called, new color: ${newColor}`);
   }
 
   constructor() { }
