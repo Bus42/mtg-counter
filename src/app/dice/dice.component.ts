@@ -11,8 +11,8 @@ export class DiceComponent implements OnInit {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-  roll(){
-    let dice = document.getElementsByName('d6');
+  roll(x){
+    let die = document.getElementById(`die${x}`);
 
     let numString = {
       1 : 'one',
@@ -23,11 +23,8 @@ export class DiceComponent implements OnInit {
       6 : 'six'
     }
 
-    for (var i = 0; i < dice.length; i++) {
-      let current = dice[i];
-      let newNum = this.randNum(1,6);
-      current.className = `fas fa-dice-${numString[newNum]}`;
-    }
+    let newNum = this.randNum(1,6);
+    die.className = `fas fa-dice-${numString[newNum]}`;
     
   }
 
