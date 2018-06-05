@@ -5,8 +5,8 @@ body {
     background-image: url("./assets/mist.jpg");
     background-color: black;
     font-size: 2em;
-    color: #007bff;
     background-repeat: no-repeat;
     background-position: top;
     font-family: 'Vollkorn SC', serif;
+    color: white;
 }
