@@ -1,22 +1,22 @@
 <div id="menuWrapper" class="menuInactive">
   <ul id="outer-list" class="list-unstyled">
 
-    <li class="menuItem">
-      <h3 (click)="showChoosePlayers()" >Player Count</h3>
-      <ul class="list-inline choosePlayers-inactive" id="choosePlayers" >
+    <li name="players" class="menuItem">
+      <h3 (click)="showChoosePlayers()">Player Count</h3>
+      <ul class="list-inline choosePlayers-inactive" id="choosePlayers">
         <li>
-          <i class="fas fa-dice-two" (click)="playerCount(2)" ></i>
+          <i class="fas fa-dice-two" (click)="playerCount(2)"></i>
         </li>
         <li>
-          <i class="fas fa-dice-three" (click)="playerCount(3)" ></i>
+          <i class="fas fa-dice-three" (click)="playerCount(3)"></i>
         </li>
         <li>
-          <i class="fas fa-dice-four" (click)="playerCount(4)" ></i>
+          <i class="fas fa-dice-four" (click)="playerCount(4)"></i>
         </li>
       </ul>
     </li>
 
-    <li class="menuItem">
+    <li name="backgrounds" class="menuItem">
       <h3 (click)="showBgList()">Background</h3>
       <ul id="bgList" class="list-unstyled bgMenu-inactive">
         <li (click)="changeBg('battle.jpg')">Battle</li>
@@ -31,7 +31,7 @@
       </ul>
     </li>
 
-    <li class="menuItem">
+    <li name="fonts" class="menuItem">
       <h3 (click)="showFontList()">Font</h3>
       <ul id="fontList" class="list-unstyled fontList-inactive">
         <li (click)="changeFont('Caesar Dressing')">Caesar Dressing</li>
@@ -44,10 +44,15 @@
         <li (click)="changeFont('Julius Sans One')">Julius Sans One</li>
         <li (click)="changeFont('Black And White Picture')">Black And White Picture</li>
         <li (click)="changeFont('Aclonica')">Aclonica</li>
+        <li>
+          <label id="colorLabel" for="color">Color</label>
+          <input id="color" name="color" #color type="color" (change)="changeColor()">
+          <p id="inputValue" aria-hidden="true">{{color.value}}</p>
+        </li>
       </ul>
     </li>
 
-    <li class="menuItem">
+    <li name="rules" class="menuItem">
       <h3 (click)="showRules()">Rules</h3>
       <ul id="rules" class="list-unstyled rules-inactive">
         <li>

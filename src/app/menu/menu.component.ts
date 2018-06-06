@@ -166,6 +166,13 @@ export class MenuComponent implements OnInit {
     choosePlayers.classList.add('choosePlayers-inactive');
   }
 
+  changeColor(){
+    let inputValue = document.getElementById('inputValue');
+    let colorLabel = document.getElementById('colorLabel');
+    document.body.style.color = inputValue.innerText;
+    colorLabel.style.color = inputValue.innerText;
+  }
+
   constructor() { }
 
   ngOnInit() {
