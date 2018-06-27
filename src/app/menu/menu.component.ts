@@ -167,10 +167,11 @@ export class MenuComponent implements OnInit {
   }
 
   changeColor(){
-    let inputValue = document.getElementById('inputValue');
+    alert('Sorry, this feature has yet to be implemented. \nIf you wish to contribute, please go to \n\nhttps://github.com/bus42/mtg-counter\n\nand have at it!');
+    /*let inputValue = document.getElementById('inputValue');
     let colorLabel = document.getElementById('colorLabel');
     document.body.style.color = inputValue.innerText;
-    colorLabel.style.color = inputValue.innerText;
+    colorLabel.style.color = inputValue.innerText;**/
   }
 
   constructor() { }

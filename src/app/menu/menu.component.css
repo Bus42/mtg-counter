@@ -136,3 +136,11 @@ a {
 #colorLabel {
     color: #fd7e14;
 }
+
+.contact-item {
+    padding: 8px;
+}
+
+.contact-item:hover {
+    transform: scale(1.1);
+}
