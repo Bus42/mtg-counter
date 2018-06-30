@@ -1,0 +1,10 @@
+#footer-wrapper {
+    position: absolute;
+    bottom: 0px;
+    font-size: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100vw;
+}
