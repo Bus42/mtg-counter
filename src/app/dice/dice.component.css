@@ -6,16 +6,12 @@
     height: 60px;
 }
 
-#roller-wrapper>i:first-child {
-    border-radius: 8px 0  0 8px;
-}
-
-#roller-wrapper>i {
-    background-color: black;
-    opacity: .7;
+.animated-die {
+    transition: all .3s ease-in-out;
     padding: 8px;
+    margin: 0 4px;
 }
 
-#roller-wrapper>i:last-child {
-    border-radius: 0 8px 8px 0;
+.rolled {
+    transform: rotate(1turn);
 }

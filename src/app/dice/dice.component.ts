@@ -24,7 +24,8 @@ export class DiceComponent implements OnInit {
     }
 
     let newNum = this.randNum(1,6);
-    die.className = `fas fa-dice-${numString[newNum]}`;
+    die.className = `animated-die fas fa-dice-${numString[newNum]}`;
+    setTimeout(()=> die.classList.toggle('rolled'), 300);
     
   }
 
